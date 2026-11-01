@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Unlock Your Wardrobe</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/hangerlogo.png" alt="hanger and leaf Logo"></a>
+    <h2>Unlock your Wardrobe</h2>
+    <p>SECURE MEMBER ACCESS</p>
+</header>
+    <section class="intro">
+        <p>Your Personal Account</p>
+        <h1>WELCOME TO YOUR WARDROBE</h1>
+        <p> Sign in, shape your profile, and personalize an account made for your style</P>
+    </section>
+   <section class="form-container">
+    
+
+    <nav class="form-nav">
+        <a href="index.html"><span class="circle">01</span> Sign in</a>
+        <a href="profile.html" ><span class="circle">02</span> Profile</a>
+        <a href="preferences.html" class="active" aria-current="step"><span class="circle">03</span> Preferences</a>
+        <a href="security.html"><span class="circle">04</span> Security</a>
+    </nav>
+
+    <section class="form-content">
+
+        <section class="form-info">
+            <span class="circle">03</span>
+            <h2>Your Preferences</h2>
+            <p>Tailor your Experience</p>
+        </section>
+
+        <section class="form-fields">
+            <form class="profile-form" id="preferences-form" action="security.html" method="get">
+                <p class="required-info">* Required fields</p>
+            <fieldset class="appearance">
+                <legend>Interface Appearence</legend>
+                <section class="appearance-options">
+                    <label>
+                        <input type="radio" name="appearence" value="light">
+                        Light
+                    </label>
+                    <label>
+                        <input type="radio" name="appearence" value="system" checked>
+                        System
+                    </label>
+                     <label>
+                        <input type="radio" name="appearence" value="dark">
+                        Dark
+                    </label>
+                </section>
+            </fieldset>
+                <fieldset class="interests">
+                    <legend>What would you like to explore?</legend>
+                    <small>Choose at least one</small>
+                    <section class="checkbox-grid">
+                        <label>
+                            <input type="checkbox" name="interests" value="everyday">
+                            Everyday style
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="workwear">
+                            Workwear
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="occasionwear">
+                            Occasionwear
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="vintage">
+                            Vintage
+                        </label>
+                    </section>
+                </fieldset>
+            
+            <section>
+                <section class="confidence">
+                    <label for="confidence">Style confidence</label>
+                    <p>We'll match recommendations to your comfort.</p>
+                    <input
+                    type="range"
+                    id="confidence"
+                    name="confidence"
+                    >
+                    <section class="range-labels">
+                        <small>Curious</small>
+                        <small>Confident</small>
+                    </section>
+                </section>
+                    <section class="input-group">
+                        <label for="usual-size">Your Usual Size *</label>
+                        <select id="usual-size" name="usual-size" required>
+                            <option value="" disabled selected>Select your size</option>
+                            <option value="xs">Extra Small</option>
+                            <option value="s">Small</option>
+                            <option value="m">Medium</option>
+                            <option value="l">Large</option>
+                            <option value="xl">Extra Large</option>
+                            <option value="xxl">2X Large</option>
+                        </select>
+                    </section>
+                    
+                    <section class="input-group">
+                        <label for="favorite-color">Favorite color</label>
+                        <input
+                        type="color"
+                        id="favorite-color"
+                        name="favorite-color"
+                        value="#536a57">
+                    </section>
+                <section class="recommendations">
+                    <section class="recommendations-text">
+                        <label for="recommendations">Personalized recommendations</label>
+                        <p>Use your activity to improve your wardrobe edit.</p>
+                    </section>
+
+                    <label class="switch">
+                        <input 
+                        type="checkbox" 
+                        id="recommendations" 
+                        name="recommendations"
+                        role="switch">
+                        <span class="switch-slider"></span>
+                    </label>
+                </section>
+            </section>
+            </section>
+        </form>
+        </section>
+        <section class="form-bottom">
+            <a href="profile.html">Back</a>
+            <p>STEP 3 of 4</p>
+            <p>Your process is saved</p>
+            <button type="submit" form="preferences-form">Continue</button>
+        </section>
+    </section>
+<footer>
+    <p>Unlock Your Wardrobe: Rethinking Styling, Clothing Use and Consumption</p>
+    <p>SECURE · PRIVATE · PERSONAL</p>
+</footer>
+</body>
+</html>

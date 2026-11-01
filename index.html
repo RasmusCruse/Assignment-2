@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Unlock Your Wardrobe</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/hangerlogo.png" alt="hanger and leaf Logo"></a>
+    <h2>Unlock your Wardrobe</h2>
+    <p>SECURE MEMBER ACCESS</p>
+</header>
+    <section class="intro">
+        <p>Your Personal Account</p>
+        <h1>WELCOME TO YOUR WARDROBE</h1>
+        <p> Sign in, shape your profile, and personalize an account made for your style</p>
+    </section>
+   <section class="form-container">
+
+    <nav class="form-nav">
+        <a href="index.html" class="active" aria-current="step"><span class="circle">01</span> Sign in</a>
+        <a href="profile.html"><span class="circle">02</span> Profile</a>
+        <a href="preferences.html"><span class="circle">03</span> Preferences</a>
+        <a href="security.html"><span class="circle">04</span> Security</a>
+    </nav>
+
+    <section class="form-content">
+
+        <section class="form-info">
+            <span class="circle">01</span>
+            <h2>Sign In</h2>
+            <p>Access your saved wardrobe.</p>
+        </section>
+
+        <section class="form-fields">
+            <p class="required-info">* Required fields</p>
+
+            <form class="profile-form" id="profile-form" action="profile.html" method="get">
+                <label for="email">Email Address *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="unlock@example.com"
+                    required>
+
+                <label for="password">Password *</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Your Password"
+                    minlength="8"
+                    required>
+                    <label class="switch-row">
+                        <span>Keep me signed in</span>
+                        <span class="switch">
+                            <input 
+                            type="checkbox" 
+                            id="remember-me" 
+                            name="remember-me" 
+                            role="switch">
+                            <span class="switch-slider"></span>
+                        </span>
+                    </label>
+
+                <fieldset class="account-type">
+                    <legend>Account Type *</legend>
+                    <label>
+                        <input type="radio" name="account" value="personal" required>
+                        Personal
+                    </label>
+                    <label>
+                        <input type="radio" name="account" value="stylist">
+                        Stylist
+                    </label>
+                    <label>
+                        <input type="radio" name="account" value="brand">
+                        Brand
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+    
+</section>
+        <section class="form-bottom">
+            <p>STEP 1 of 4</p>
+            <p>Your process is saved</p>
+            <button type="submit" form="profile-form">Continue</button>
+        </section>
+    </section>
+<footer>
+    <p>Unlock Your Wardrobe: Rethinking Styling, Clothing Use and Consumption</p>
+    <p>SECURE · PRIVATE · PERSONAL</p>
+</footer>
+</body>
+</html>

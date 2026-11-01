@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Unlock Your Wardrobe</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/hangerlogo.png" alt="hanger and leaf Logo"></a>
+    <h2>Unlock your Wardrobe</h2>
+    <p>SECURE MEMBER ACCESS</p>
+</header>
+    <section class="intro">
+        <p>Your Personal Account</p>
+        <h1>WELCOME TO YOUR WARDROBE</h1>
+        <p> Sign in, shape your profile, and personalize an account made for your style</P>
+    </section>
+   <section class="form-container">
+
+    <nav class="form-nav">
+        <a href="index.html"><span class="circle">01</span> Sign in</a>
+        <a href="profile.html" ><span class="circle">02</span> Profile</a>
+        <a href="preferences.html"><span class="circle">03</span> Preferences</a>
+        <a href="security.html" class="active" aria-current="step"><span class="circle">04</span> Security</a>
+    </nav>
+    <section class="form-content">
+        <section class="form-info">
+            <span class="circle">04</span>
+            <h2>Your Security</h2>
+            <p>Keep your account protected</p>
+        </section>
+        <section class="form-fields">
+            <form class="profile-form" id="security-form" action="finish.html">
+                <p class="required-info">* Required fields</p>
+                <section class="security-option">
+                    <section>
+                        <h3>Two-factor authentication</h3>
+                        <p>Require a verification code when you sign in.</p>
+                    </section>
+                    <label class="switch">
+                        <input type="checkbox" id="two-factor" name="two-factor"
+                        aria-label="Enable two-factor authentication" role="switch">
+                        <span class="switch-slider"></span>
+                    </label>
+                </section>
+                <section class="security-grid">
+                    <section class="input-group">
+                        <label for="verification">Verification method</label>
+                        <select id="verification" name="verification">
+                            <option value="app">Authenticator app</option>
+                            <option value="email">Email</option>
+                            <option value="sms">SMS</option>
+                        </select>
+                    </section>
+                    <section class="input-group">
+                        <label for="backup-email">Backup email</label>
+                        <input type="email"
+                        id="backup-email"
+                        name="backup-email"
+                        placeholder="backup@example.com"
+                        >
+                    </section>
+                    <section class="input-group">
+                        <label for="security-pin">Security PIN</label>
+                        <input type="password"
+                        id="security-pin"
+                        name="security-pin"
+                        placeholder="6-digit PIN"
+                        pattern="[0-9]{6}"
+                        inputmode="numeric"
+                        maxlength="6"
+                        title="The PIN must contain exactly 6 numbers"
+                        required>
+                    </section>
+                    <section class="input-group">
+                        <label for="visibility">Profile visibility</label>
+                        <select id="visibility" name="visibility">
+                            <option value="private">Private</option>
+                            <option value="public">Public</option>
+                        </select>
+                    </section>
+                </section>
+                <section class="login-alerts">
+                    <section>
+                        <label for="login-alerts">Login alerts</label>
+                        <p>Email me when a new device accesses my account.</p>
+                    </section>
+                    <label class="switch">
+                        <input type="checkbox"
+                        id="login-alerts"
+                        name="login-alerts"
+                        role="switch"
+                        >
+                        <span class="switch-slider"></span>
+                    </label>
+                </section>
+                <section class="terms">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the terms of service and privacy policy.
+                    </label>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <section class="form-bottom">
+    <a href="preferences.html">Back</a>
+    <p>STEP 4 of 4</p>
+    <p>Your process is saved</p>
+    <button type="submit" form="security-form">
+    Finnish setup
+</button>
+</section>
+</section>
+<footer>
+    <p>Unlock Your Wardrobe: Rethinking Styling, Clothing Use and Consumption</p>
+    <p>SECURE · PRIVATE · PERSONAL</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Unlock Your Wardrope</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/hangerlogo.png" alt="hanger and leaf Logo"></a>
+    <h2>Unlock your Wardrobe</h2>
+    <p>SECURE MEMBER ACCESS</p>
+</header>
+    <section class="intro">
+        <p>Your Personal Account</p>
+        <h1>WELCOME TO YOUR WARDROBE</h1>
+        <p> Sign in, shape your profile, and personalize an account made for your style</P>
+    </section>
+   <section class="form-container">
+
+    <nav class="form-nav">
+        <a href="index.html"><span class="circle">01</span> Sign in</a>
+        <a href="profile.html" class="active" aria-cuurent="step"><span class="circle">02</span> Profile</a>
+        <a href="preferences.html"><span class="circle">03</span> Preferences</a>
+        <a href="security.html"><span class="circle">04</span> Security</a>
+    </nav>
+
+    <section class="form-content">
+
+        <section class="form-info">
+            <span class="circle">02</span>
+            <h2>Your Profile</h2>
+            <p>Make the space feel like yours</p>
+        </section>
+
+        <section class="form-fields">
+            <form class="profile-form" id="profile-form" action="preferences.html" method="get">
+                <p class="required-info">* Required fields</p>
+                <section class="input-group">
+                <label for="profile-photo">Add a profile photo</label>
+                <input
+                    type="file"
+                    id="profile-photo"
+                    name="profile-photo"
+                    accept=".jpg,.jpeg,.png"
+                    aria-describedby="photo-help">
+                    <small id="photo-help">JPG or PNG, up to 5 MB</small>
+                </section>
+                <section class="profile-grid">
+                <section class="input-group">
+                    <label for="display-name">Display name *</label>
+                    <input
+                    type="text"
+                    id="display-name"
+                    name="display-name"
+                    placeholder="John Doe"
+                    required>
+                </section>
+                <section class="input-group">
+                    <label for="user-name">User Name *</label>
+                    <input
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="@johndoe"
+                    required>
+                </section>
+                <section class="input-group">
+                    <label for="date-of-birth">Date Of Birth *</label>
+                    <input
+                    type="date"
+                    id="date-of-birth"
+                    name="date-of-birth"
+                    required>
+                </section>
+                <section class="input-group">
+                    <label for="phone-number">Phone Number *</label>
+                    <input
+                    type="tel"
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder="+45 12345678"
+                    pattern="(\+45 )?[0-9]{8}"
+                    title="Enter 8 digits, optionally with +45"
+                    required>
+                </section>
+                <section class="input-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country *</option>
+                <option value="dk">Denmark</option>
+                <option value="se">Sweden</option>
+                <option value="no">Norway</option>
+                <option value="fi">Finland</option>
+                </select>
+            </section>
+            <section class="input-group">
+            <label for="timezone">Time zone</label>
+            <input
+                type="text"
+                id="timezone"
+                name="timezone"
+                list="cities"
+                placeholder="Start typing a city">
+
+            <datalist id="cities">
+                <option value="Copenhagen">
+                <option value="London">
+                <option value="Paris">
+                <option value="Berlin">
+                <option value="New York">
+                <option value="Tokyo">
+                <option value="Sydney">
+            </datalist>
+        </section>
+    </section>
+    <section class="input-group">
+        <label for="about">About you</label>
+        <textarea
+        id="about"
+        name="about"
+        rows="5"
+        maxlength="240"
+        aria-describedby="about-help"
+        placeholder="Share a little about your style and what you hope to discover."></textarea>
+        <small id="about-help">Maximum 240 characters.</small>
+    </section>
+</form>
+        </section>
+    </section>
+        <section class="form-bottom">
+            <a href="index.html">Back</a>
+            <p>STEP 2 of 4</p>
+            <p>Your process is saved</p>
+            <button type="submit" form="profile-form">Continue</button>
+        </section>
+    </section>
+<footer>
+    <p>Unlock Your Wardrobe: Rethinking Styling, Clothing Use and Consumption</p>
+    <p>SECURE · PRIVATE · PERSONAL</p>
+</footer>
+</body>
+</html>
